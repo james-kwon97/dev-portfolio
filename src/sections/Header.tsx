@@ -2,15 +2,18 @@ export const Header = () => {
   return (
     <div className="flex justify-center items-center relative top-3">
       <nav>
-        <a
-          href="#"
-          className="px-4 py-1.5 rounded-full text-white/70 text-sm font-semibold"
-        >
+        <a href="#" className="nav-item">
           Home
         </a>
-        <a href="#">Projects</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#" className="nav-item">
+          Projects
+        </a>
+        <a href="#" className="nav-item">
+          About
+        </a>
+        <a href="#" className="nav-item">
+          Contact
+        </a>
       </nav>
     </div>
   )
