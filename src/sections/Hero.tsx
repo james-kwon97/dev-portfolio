@@ -41,6 +41,10 @@ export const HeroSection = () => {
         <SparkleIcon className="size-14 text-emerald-300/20" />
       </HeroOrbit>
 
+      <HeroOrbit size={720} rotation={85}>
+        <div className="size-3 rounded-full bg-emerald-300/20" />
+      </HeroOrbit>
+
       <div className="container">
         <div className="flex flex-col items-center ">
           <Image src={memojiImage} className="size-[100px]" alt="Person behind laptop emoji" />
