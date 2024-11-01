@@ -44,6 +44,12 @@ export const HeroSection = () => {
       <HeroOrbit size={720} rotation={85}>
         <div className="size-3 rounded-full bg-emerald-300/20" />
       </HeroOrbit>
+      <HeroOrbit size={520} rotation={-41}>
+        <div className="size-2 rounded-full bg-emerald-300/20" />
+      </HeroOrbit>
+      <HeroOrbit size={650} rotation={-5}>
+        <div className="size-2 rounded-full bg-emerald-300/20" />
+      </HeroOrbit>
 
       <div className="container">
         <div className="flex flex-col items-center ">
