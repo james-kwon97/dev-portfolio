@@ -1,6 +1,7 @@
 import darkSaasLandingPage from '@/assets/images/dark-saas-landing-page.png';
 import lightSaasLandingPage from '@/assets/images/light-saas-landing-page.png';
 import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
+import Image from 'next/image';
 
 const portfolioProjects = [
   {
@@ -56,6 +57,16 @@ export const ProjectsSection = () => {
                 <span>{project.year}</span>
               </div>
               <h3>{project.title}</h3>
+              <hr />
+              <ul>
+                {project.results.map((result) => (
+                  <li>{result.title}</li>
+                ))}
+              </ul>
+              <a href={project.link}>
+                <button>View Live Site</button>
+              </a>
+              <Image src={project.image} alt={project.title} />
             </div>
           ))}
         </div>
