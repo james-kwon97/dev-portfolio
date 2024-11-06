@@ -46,7 +46,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <div>
+    <section>
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
@@ -57,7 +57,7 @@ export const ProjectsSection = () => {
         <p className="text-center text-white/60 mt-4">
           See how I transformed designs into engaging user web experiences
         </p>
-        <div className="flex flex-col mt-10">
+        <div className="mt-10 flex flex-col gap-20">
           {portfolioProjects.map((project) => (
             <div
               key={project.title}
@@ -89,6 +89,6 @@ export const ProjectsSection = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
