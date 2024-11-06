@@ -54,8 +54,8 @@ export const ProjectsSection = () => {
             Real-world Results
           </p>
         </div>
-        <h2 className="font-serif text-3xl text-center mt-6">Featured Projects</h2>
-        <p className="text-center text-white/60 mt-4">
+        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
+        <p className="text-center md:text-lg text-white/60 mt-4 max-w-md mx-auto">
           See how I transformed designs into engaging user web experiences
         </p>
         <div className="mt-10 flex flex-col gap-20">
