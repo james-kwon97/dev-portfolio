@@ -9,14 +9,14 @@ import grainImage from '@/assets/images/grain.jpg';
 const portfolioProjects = [
   {
     company: 'Acme Corp',
-    year: '2022',
+    year: '2024',
     title: 'Dark Saas Landing Page',
     results: [
       { title: 'Enhanced user experience by 40%' },
       { title: 'Improved site speed by 50%' },
       { title: 'Increased mobile traffic by 35%' },
     ],
-    link: 'https://youtu.be/4k7IdSLxh6w',
+    link: 'https://dripnz.netlify.app/',
     image: darkSaasLandingPage,
   },
   {
