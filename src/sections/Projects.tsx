@@ -47,7 +47,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16">
+    <section className="pb-16 lg:py-24">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
@@ -55,7 +55,7 @@ export const ProjectsSection = () => {
           </p>
         </div>
         <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
-        <p className="text-center md:text-lg text-white/60 mt-4 max-w-md mx-auto">
+        <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           See how I transformed designs into engaging user web experiences
         </p>
         <div className="mt-10 md:mt-20 flex flex-col gap-20">
