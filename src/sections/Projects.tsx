@@ -92,11 +92,13 @@ export const ProjectsSection = () => {
                     </button>
                   </a>
                 </div>
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  className="mt-8 -mb-4 md:-mb-0 lg:mt-0"
-                />
+                <div>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full"
+                  />
+                </div>
               </div>
             </div>
           ))}
