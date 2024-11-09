@@ -8,5 +8,13 @@ const words = [
 ];
 
 export const TapeSection = () => {
-  return <div>Tape Section</div>;
+  return (
+    <div>
+      {words.map((word) => (
+        <div key={word}>
+          <span>{word}</span>
+        </div>
+      ))}
+    </div>
+  );
 };
