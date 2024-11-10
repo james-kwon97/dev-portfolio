@@ -3,11 +3,14 @@ import StarIcon from '@/assets/icons/star.svg';
 const words = [
   'Performant',
   'Accessible',
-  'Responsive',
+  'Secure',
   'Interactive',
   'Scalable',
   'User Friendly',
-  'Secure',
+  'Responsive',
+  'Maintainable',
+  'Usable',
+  'Reliable',
 ];
 
 export const TapeSection = () => {
