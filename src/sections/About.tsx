@@ -2,7 +2,7 @@ import { SectionHeader } from '@/components/SectionHeader';
 
 export const AboutSection = () => {
   return (
-    <div>
+    <div className="pb-96">
       <SectionHeader
         eyebrow="About Me"
         title="A Glimpse Into My World"
