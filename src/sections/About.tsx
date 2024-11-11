@@ -61,6 +61,14 @@ export const AboutSection = () => {
             <h3>My Tech Stack</h3>
             <p>View my tech stack for building modern web experiences.</p>
           </div>
+          <div>
+            {techStackItems.map((item) => (
+              <div key={item.title}>
+                <span>{item.icon}</span>
+                <span>{item.title}</span>
+              </div>
+            ))}
+          </div>
         </Card>
       </div>
     </div>
