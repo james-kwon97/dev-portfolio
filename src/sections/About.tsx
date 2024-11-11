@@ -3,31 +3,37 @@ import { Card } from '@/components/Card';
 import StarIcon from '@/assets/icons/star.svg';
 import bookImage from '@/assets/images/book-cover.png';
 import Image from 'next/image';
+import JavascriptIcon from '@/assets/icons/square-js.svg';
+import HTMLIcon from '@/assets/icons/html5.svg';
+import CssIcon from '@/assets/icons/css3.svg';
+import ReactIcon from '@/assets/icons/react.svg';
+import ChromeIcon from '@/assets/icons/chrome.svg';
+import GithubIcon from '@/assets/icons/github.svg';
 
 const techStackItems = [
   {
     title: 'JavaScript',
-    icon: '',
+    icon: <JavascriptIcon />,
   },
   {
     title: 'HTML5',
-    icon: '',
+    icon: <HTMLIcon />,
   },
   {
     title: 'CSS3',
-    icon: '',
+    icon: <CssIcon />,
   },
   {
     title: 'React',
-    icon: '',
+    icon: <ReactIcon />,
   },
   {
     title: 'Chrome',
-    icon: '',
+    icon: <ChromeIcon />,
   },
   {
     title: 'Github',
-    icon: '',
+    icon: <GithubIcon />,
   },
 ];
 
