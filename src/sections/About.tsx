@@ -4,6 +4,33 @@ import StarIcon from '@/assets/icons/star.svg';
 import bookImage from '@/assets/images/book-cover.png';
 import Image from 'next/image';
 
+const techStackItems = [
+  {
+    title: 'JavaScript',
+    icon: '',
+  },
+  {
+    title: 'HTML5',
+    icon: '',
+  },
+  {
+    title: 'CSS3',
+    icon: '',
+  },
+  {
+    title: 'React',
+    icon: '',
+  },
+  {
+    title: 'Chrome',
+    icon: '',
+  },
+  {
+    title: 'Github',
+    icon: '',
+  },
+];
+
 export const AboutSection = () => {
   return (
     <div className="pb-96">
