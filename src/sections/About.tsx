@@ -21,6 +21,14 @@ export const AboutSection = () => {
           </div>
           <Image src={bookImage} alt="Book Cover" />
         </Card>
+
+        <Card>
+          <div>
+            <StarIcon />
+            <h3>My Tech Stack</h3>
+            <p>View my tech stack for building modern web experiences.</p>
+          </div>
+        </Card>
       </div>
     </div>
   );
