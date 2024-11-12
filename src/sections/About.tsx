@@ -13,27 +13,27 @@ import GithubIcon from '@/assets/icons/github.svg';
 const techStackItems = [
   {
     title: 'JavaScript',
-    icon: <JavascriptIcon />,
+    iconType: JavascriptIcon,
   },
   {
     title: 'HTML5',
-    icon: <HTMLIcon />,
+    iconType: HTMLIcon,
   },
   {
     title: 'CSS3',
-    icon: <CssIcon />,
+    iconType: CssIcon,
   },
   {
     title: 'React',
-    icon: <ReactIcon />,
+    iconType: ReactIcon,
   },
   {
     title: 'Chrome',
-    icon: <ChromeIcon />,
+    iconType: ChromeIcon,
   },
   {
     title: 'Github',
-    icon: <GithubIcon />,
+    iconType: GithubIcon,
   },
 ];
 
@@ -64,7 +64,7 @@ export const AboutSection = () => {
           <div>
             {techStackItems.map((item) => (
               <div key={item.title}>
-                <span>{item.icon}</span>
+                <TechIcon component={item.iconType} />
                 <span>{item.title}</span>
               </div>
             ))}
