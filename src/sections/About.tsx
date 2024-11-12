@@ -11,6 +11,7 @@ import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
 import { TechIcon } from '@/components/TechIcon';
 import mapImage from '@/assets/images/map.png';
+import smileMemoji from '@/assets/images/memoji-smile.png';
 
 const techStackItems = [
   {
@@ -83,6 +84,7 @@ export const AboutSection = () => {
 
         <Card>
           <Image src={mapImage} alt="Map" />
+          <Image src={smileMemoji} alt="Smile Memoji" />
         </Card>
       </div>
     </div>
