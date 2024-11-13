@@ -40,6 +40,37 @@ const techStackItems = [
   },
 ];
 
+const hobbies = [
+  {
+    title: 'Painting',
+    emoji: '🎨',
+  },
+  {
+    title: 'Photography',
+    emoji: '📸',
+  },
+  {
+    title: 'Gaming',
+    emoji: '🎮',
+  },
+  {
+    title: 'Hiking',
+    emoji: '🥾',
+  },
+  {
+    title: 'Music',
+    emoji: '🎵',
+  },
+  {
+    title: 'Fitness',
+    emoji: '🏋️‍♂️',
+  },
+  {
+    title: 'Reading',
+    emoji: '📚',
+  },
+];
+
 export const AboutSection = () => {
   return (
     <div className="pb-96">
