@@ -73,58 +73,60 @@ const hobbies = [
 
 export const AboutSection = () => {
   return (
-    <div className="pb-96">
-      <SectionHeader
-        eyebrow="About Me"
-        title="A Glimpse Into My World"
-        description="Learn more about who I am, what I do, and what inspires me"
-      />
-      <div>
-        <Card>
-          <div>
-            <StarIcon />
-            <h3>My Reads</h3>
-            <p>Explore the books shaping my perspectives.</p>
-          </div>
-          <Image src={bookImage} alt="Book Cover" />
-        </Card>
+    <div className="py-16">
+      <div className="container">
+        <SectionHeader
+          eyebrow="About Me"
+          title="A Glimpse Into My World"
+          description="Learn more about who I am, what I do, and what inspires me"
+        />
+        <div>
+          <Card>
+            <div>
+              <StarIcon />
+              <h3>My Reads</h3>
+              <p>Explore the books shaping my perspectives.</p>
+            </div>
+            <Image src={bookImage} alt="Book Cover" />
+          </Card>
 
-        <Card>
-          <div>
-            <StarIcon />
-            <h3>My Tech Stack</h3>
-            <p>View my tech stack for building modern web experiences.</p>
-          </div>
-          <div>
-            {techStackItems.map((item) => (
-              <div key={item.title}>
-                <TechIcon component={item.iconType} />
-                <span>{item.title}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
+          <Card>
+            <div>
+              <StarIcon />
+              <h3>My Tech Stack</h3>
+              <p>View my tech stack for building modern web experiences.</p>
+            </div>
+            <div>
+              {techStackItems.map((item) => (
+                <div key={item.title}>
+                  <TechIcon component={item.iconType} />
+                  <span>{item.title}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
 
-        <Card>
-          <div>
-            <StarIcon />
-            <h3>Beyond the Code</h3>
-            <p>Explore my interests and hobbies beyond the digital realm.</p>
-          </div>
-          <div>
-            {hobbies.map((hobby) => (
-              <div key={hobby.title}>
-                <span>{hobby.title}</span>
-                <span>{hobby.emoji}</span>
-              </div>
-            ))}
-          </div>
-        </Card>
+          <Card>
+            <div>
+              <StarIcon />
+              <h3>Beyond the Code</h3>
+              <p>Explore my interests and hobbies beyond the digital realm.</p>
+            </div>
+            <div>
+              {hobbies.map((hobby) => (
+                <div key={hobby.title}>
+                  <span>{hobby.title}</span>
+                  <span>{hobby.emoji}</span>
+                </div>
+              ))}
+            </div>
+          </Card>
 
-        <Card>
-          <Image src={mapImage} alt="Map" />
-          <Image src={smileMemoji} alt="Smile Memoji" />
-        </Card>
+          <Card>
+            <Image src={mapImage} alt="Map" />
+            <Image src={smileMemoji} alt="Smile Memoji" />
+          </Card>
+        </div>
       </div>
     </div>
   );
