@@ -111,6 +111,14 @@ export const AboutSection = () => {
             <h3>Beyond the Code</h3>
             <p>Explore my interests and hobbies beyond the digital realm.</p>
           </div>
+          <div>
+            {hobbies.map((hobby) => (
+              <div key={hobby.title}>
+                <span>{hobby.title}</span>
+                <span>{hobby.emoji}</span>
+              </div>
+            ))}
+          </div>
         </Card>
 
         <Card>
