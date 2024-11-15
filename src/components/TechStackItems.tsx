@@ -1,13 +1,21 @@
+import { twMerge } from 'tailwind-merge';
 import { TechIcon } from './TechIcon';
 
 export const TechStackItems = ({
   items,
+  className,
 }: {
   items: { title: string; iconType: React.ElementType }[];
+  className?: string;
 }) => {
   return (
-    <div className="flex [mask-image]:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-      <div className="flex flex-none">
+    <div
+      className={twMerge(
+        'flex [mask-image]:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]',
+        className,
+      )}
+    >
+      <div className="flex flex-none py-0.5">
         {items.map((item) => (
           <div
             key={item.title}
