@@ -1,13 +1,13 @@
 import { TechIcon } from './TechIcon';
 
-export const TeckStackItems = ({
-  techStackItems,
+export const TechStackItems = ({
+  items,
 }: {
-  techStackItems: { title: string; iconType: React.ElementType }[];
+  items: { title: string; iconType: React.ElementType }[];
 }) => {
   return (
     <div>
-      {techStackItems.map((item) => (
+      {items.map((item) => (
         <div
           key={item.title}
           className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
