@@ -90,11 +90,10 @@ export const AboutSection = () => {
           </Card>
 
           <Card>
-            <div>
-              <StarIcon />
-              <h3>My Tech Stack</h3>
-              <p>View my tech stack for building modern web experiences.</p>
-            </div>
+            <CardHeader
+              title="My Tech Stack"
+              description="View my tech stack for building modern web experiences."
+            />
             <div>
               {techStackItems.map((item) => (
                 <div key={item.title}>
@@ -106,11 +105,10 @@ export const AboutSection = () => {
           </Card>
 
           <Card>
-            <div>
-              <StarIcon />
-              <h3>Beyond the Code</h3>
-              <p>Explore my interests and hobbies beyond the digital realm.</p>
-            </div>
+            <CardHeader
+              title="Beyond the Code"
+              description="Explore my interests and hobbies beyond the digital realm."
+            />
             <div>
               {hobbies.map((hobby) => (
                 <div key={hobby.title}>
