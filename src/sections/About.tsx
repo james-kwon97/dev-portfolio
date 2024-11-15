@@ -13,6 +13,7 @@ import { TechIcon } from '@/components/TechIcon';
 import mapImage from '@/assets/images/map.png';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import { CardHeader } from '@/components/CardHeader';
+import { TechStackItems } from '@/components/TechStackItems';
 
 const techStackItems = [
   {
@@ -94,17 +95,8 @@ export const AboutSection = () => {
               title="My Tech Stack"
               description="View my tech stack for building modern web experiences."
             />
-            <div>
-              {techStackItems.map((item) => (
-                <div
-                  key={item.title}
-                  className="inline-flex items-center gap-4 py-2 px-3 outline outline-2 outline-white/10 rounded-lg"
-                >
-                  <TechIcon component={item.iconType} />
-                  <span className="font-semibold">{item.title}</span>
-                </div>
-              ))}
-            </div>
+            <TechStackItems items={techStackItems} />
+            <TechStackItems items={techStackItems} />
           </Card>
 
           <Card>
