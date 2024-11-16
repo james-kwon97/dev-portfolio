@@ -15,7 +15,7 @@ export const TechStackItems = ({
         className,
       )}
     >
-      <div className="flex flex-none py-0.5">
+      <div className="flex flex-none py-0.5 gap-6">
         {items.map((item) => (
           <div
             key={item.title}
