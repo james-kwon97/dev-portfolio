@@ -17,7 +17,7 @@ export const TechStackItems = ({
         className,
       )}
     >
-      <div className={twMerge('flex flex-none py-0.5 gap-6', itemsWrapperClassName)}>
+      <div className={twMerge('flex flex-none py-0.5 gap-6 pr-6', itemsWrapperClassName)}>
         {items.map((item) => (
           <div
             key={item.title}
