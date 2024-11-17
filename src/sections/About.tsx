@@ -113,9 +113,9 @@ export const AboutSection = () => {
               {hobbies.map((hobby) => (
                 <div
                   key={hobby.title}
-                  className="inline-flex gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 "
+                  className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 "
                 >
-                  <span>{hobby.title}</span>
+                  <span className="font-medium text-gray-950">{hobby.title}</span>
                   <span>{hobby.emoji}</span>
                 </div>
               ))}
