@@ -46,30 +46,44 @@ const hobbies = [
   {
     title: 'Painting',
     emoji: '🎨',
+    left: '',
+    top: '',
   },
   {
     title: 'Photography',
     emoji: '📸',
+    left: '',
+    top: '',
   },
   {
     title: 'Gaming',
     emoji: '🎮',
+    left: '',
+    top: '',
   },
   {
     title: 'Hiking',
     emoji: '🥾',
+    left: '',
+    top: '',
   },
   {
     title: 'Music',
     emoji: '🎵',
+    left: '',
+    top: '',
   },
   {
     title: 'Fitness',
     emoji: '🏋️‍♂️',
+    left: '',
+    top: '',
   },
   {
     title: 'Reading',
     emoji: '📚',
+    left: '',
+    top: '',
   },
 ];
 
