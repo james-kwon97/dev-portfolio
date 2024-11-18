@@ -118,17 +118,21 @@ export const AboutSection = () => {
             />
           </Card>
 
-          <Card className="h-[320px] p-0">
+          <Card className="h-[320px] p-0 flex flex-col">
             <CardHeader
               title="Beyond the Code"
               description="Explore my interests and hobbies beyond the digital realm."
               className="px-6 py-6"
             />
-            <div className="relative">
+            <div className="relative flex-1">
               {hobbies.map((hobby) => (
                 <div
                   key={hobby.title}
                   className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
+                  style={{
+                    left: hobby.left,
+                    top: hobby.top,
+                  }}
                 >
                   <span className="font-medium text-gray-950">{hobby.title}</span>
                   <span>{hobby.emoji}</span>
