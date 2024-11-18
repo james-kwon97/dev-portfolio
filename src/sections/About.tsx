@@ -141,9 +141,11 @@ export const AboutSection = () => {
             </div>
           </Card>
 
-          <Card>
-            <Image src={mapImage} alt="Map" />
-            <Image src={smileMemoji} alt="Smile Memoji" />
+          <Card className="h-[320px] p-0 relative">
+            <Image src={mapImage} alt="Map" className="h-full w-full object-cover" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+              <Image src={smileMemoji} alt="Smile Memoji" />
+            </div>
           </Card>
         </div>
       </div>
