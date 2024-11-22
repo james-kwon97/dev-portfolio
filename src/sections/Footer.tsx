@@ -1,7 +1,10 @@
+import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
+
 const footerLinks = [
   { title: 'Github', href: '#' },
   { title: 'LinkedIn', href: '#' },
 ];
+
 export const Footer = () => {
   return (
     <footer>
@@ -12,10 +15,9 @@ export const Footer = () => {
             {footerLinks.map((link) => (
               <a href="#" key={link.title}>
                 <span>{link.title}</span>
+                <ArrowUpRightIcon />
               </a>
             ))}
-            <a href="#">Github</a>
-            <a href="#">LinkedIn</a>
           </nav>
         </div>
       </div>
