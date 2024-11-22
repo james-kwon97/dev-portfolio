@@ -1,6 +1,7 @@
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg';
 
 const footerLinks = [
+  { title: 'Email', href: '#' },
   { title: 'Github', href: '#' },
   { title: 'LinkedIn', href: '#' },
 ];
