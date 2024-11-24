@@ -4,10 +4,11 @@ export const HeroOrbit = ({
   children,
   size,
   rotation,
-}: PropsWithChildren<{ size: number; rotation: number }>) => {
+  spinDuration,
+}: PropsWithChildren<{ size: number; rotation: number; spinDuration?: string }>) => {
   return (
     <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-      <div className="animate-spin [animation-duration:10s]">
+      <div className="animate-spin" style={{ animationDuration: spinDuration }}>
         <div
           className="flex items-start justify-start"
           style={{ transform: `rotate(${rotation}deg)`, height: `${size}px`, width: `${size}px` }}
