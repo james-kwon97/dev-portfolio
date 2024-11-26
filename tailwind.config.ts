@@ -1,3 +1,4 @@
+import { transform } from 'next/dist/build/swc';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -33,6 +34,14 @@ const config: Config = {
           '75%, 100%': {
             transform: 'scale(3)',
             opacity: '0',
+          },
+        },
+        'move-left': {
+          '0%': {
+            transform: 'translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
           },
         },
       },
