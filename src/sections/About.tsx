@@ -12,6 +12,7 @@ import mapImage from '@/assets/images/map.png';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import { CardHeader } from '@/components/CardHeader';
 import { TechStackItems } from '@/components/TechStackItems';
+import { motion } from 'framer-motion';
 
 const techStackItems = [
   {
