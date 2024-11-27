@@ -1,3 +1,4 @@
+'use client';
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
 import bookImage from '@/assets/images/book-cover.png';
@@ -133,17 +134,18 @@ export const AboutSection = () => {
               />
               <div className="relative flex-1">
                 {hobbies.map((hobby) => (
-                  <div
+                  <motion.div
                     key={hobby.title}
                     className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{
                       left: hobby.left,
                       top: hobby.top,
                     }}
+                    drag
                   >
                     <span className="font-medium text-gray-950">{hobby.title}</span>
                     <span>{hobby.emoji}</span>
-                  </div>
+                  </motion.div>
                 ))}
               </div>
             </Card>
