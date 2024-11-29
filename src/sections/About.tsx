@@ -1,6 +1,6 @@
-'use client';
 import { SectionHeader } from '@/components/SectionHeader';
 import { Card } from '@/components/Card';
+import StarIcon from '@/assets/icons/star.svg';
 import bookImage from '@/assets/images/book-cover.png';
 import Image from 'next/image';
 import JavascriptIcon from '@/assets/icons/square-js.svg';
@@ -9,12 +9,11 @@ import CssIcon from '@/assets/icons/css3.svg';
 import ReactIcon from '@/assets/icons/react.svg';
 import ChromeIcon from '@/assets/icons/chrome.svg';
 import GithubIcon from '@/assets/icons/github.svg';
+import { TechIcon } from '@/components/TechIcon';
 import mapImage from '@/assets/images/map.png';
 import smileMemoji from '@/assets/images/memoji-smile.png';
 import { CardHeader } from '@/components/CardHeader';
 import { TechStackItems } from '@/components/TechStackItems';
-import { motion } from 'framer-motion';
-import { useRef } from 'react';
 
 const techStackItems = [
   {
@@ -89,7 +88,6 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
-  const constraintRef = useRef(null);
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -115,14 +113,11 @@ export const AboutSection = () => {
                 title="My Tech Stack"
                 description="View my tech stack for building modern web experiences."
               />
-              <TechStackItems
-                items={techStackItems}
-                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
-              />
+              <TechStackItems items={techStackItems} />
               <TechStackItems
                 items={techStackItems}
                 className="mt-6"
-                itemsWrapperClassName="animate-move-right [animation-duration:15s]"
+                itemsWrapperClassName="-translate-x-1/2"
               />
             </Card>
           </div>
@@ -134,21 +129,19 @@ export const AboutSection = () => {
                 description="Explore my interests and hobbies beyond the digital realm."
                 className="px-6 py-6"
               />
-              <div className="relative flex-1" ref={constraintRef}>
+              <div className="relative flex-1">
                 {hobbies.map((hobby) => (
-                  <motion.div
+                  <div
                     key={hobby.title}
                     className="inline-flex items-center gap-2 px-6 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-full py-1.5 absolute"
                     style={{
                       left: hobby.left,
                       top: hobby.top,
                     }}
-                    drag
-                    dragConstraints={constraintRef}
                   >
                     <span className="font-medium text-gray-950">{hobby.title}</span>
                     <span>{hobby.emoji}</span>
-                  </motion.div>
+                  </div>
                 ))}
               </div>
             </Card>
@@ -159,9 +152,7 @@ export const AboutSection = () => {
                 alt="Map"
                 className="h-full w-full object-cover object-left-top"
               />
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-20 animate-ping [animation-duration:2s]"></div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 -z-10"></div>
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 size-20 rounded-full bg-gradient-to-r from-emerald-300 to-sky-400 after:content-[''] after:absolute after:inset-0 after:outline after:outline-2 after:-outline-offset-2 after:rounded-full after:outline-gray-950/30">
                 <Image src={smileMemoji} alt="Smile Memoji" className="size-20" />
               </div>
             </Card>
