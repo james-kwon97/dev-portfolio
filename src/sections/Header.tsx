@@ -6,6 +6,10 @@ export const Header = () => {
   const [active, setActive] = useState('home');
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const projectsSection = document.getElementById('projects');
       const aboutSection = document.getElementById('about');
