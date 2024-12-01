@@ -1,9 +1,46 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const Header = () => {
   const [active, setActive] = useState('home');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const projectsSection = document.getElementById('projects');
+      const aboutSection = document.getElementById('about');
+      const scrollPosition = window.scrollY;
+
+      if (projectsSection) {
+        const projectsRect = projectsSection.getBoundingClientRect();
+        const projectsTop = projectsRect.top + window.scrollY;
+        const offset = window.innerWidth >= 1024 ? -200 : -100;
+
+        if (scrollPosition >= projectsTop + offset) {
+          setActive('projects');
+        } else {
+          setActive('home');
+        }
+      }
+
+      if (aboutSection) {
+        const aboutRect = aboutSection.getBoundingClientRect();
+        const aboutTop = aboutRect.top + window.scrollY;
+        const offset = window.innerWidth >= 1024 ? -200 : -100;
+
+        if (scrollPosition >= aboutTop + offset) {
+          setActive('about');
+        }
+      }
+
+      if (window.innerHeight + scrollPosition >= document.documentElement.scrollHeight - 100) {
+        setActive('contact');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const scrollToSection = (sectionId: string) => (e: React.MouseEvent) => {
     e.preventDefault();
