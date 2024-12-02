@@ -9,11 +9,11 @@ import { Card } from '@/components/Card';
 
 const portfolioProjects = [
   {
-    company: 'Acme Corp',
+    company: 'Drip',
     year: '2024',
-    title: 'Dark Saas Landing Page',
+    title: 'Premium Coffee Website',
     results: [
-      { title: 'Enhanced user experience by 40%' },
+      { title: 'Māori-English language toggle switch' },
       { title: 'Improved site speed by 50%' },
       { title: 'Increased mobile traffic by 35%' },
     ],
