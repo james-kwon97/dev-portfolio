@@ -111,11 +111,14 @@ export const AboutSection = () => {
                 title="My Tech Stack"
                 description="View my tech stack for building modern web experiences."
               />
-              <TechStackItems items={techStackItems} />
+              <TechStackItems
+                items={techStackItems}
+                itemsWrapperClassName="animate-move-left [animation-duration:30s]"
+              />
               <TechStackItems
                 items={techStackItems}
                 className="mt-6"
-                itemsWrapperClassName="-translate-x-1/2"
+                itemsWrapperClassName="animate-move-right [animation-duration:15s]"
               />
             </Card>
           </div>
