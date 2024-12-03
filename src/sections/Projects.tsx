@@ -14,16 +14,16 @@ const portfolioProjects = [
     title: 'Premium Coffee Website',
     results: [
       { title: 'Māori-English language toggle switch' },
-      { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      { title: 'Responsive on all devices up to 13" screens' },
+      { title: 'Built with React and TypeScript, styled with CSS' },
     ],
     link: 'https://dripnz.netlify.app/',
     image: darkSaasLandingPage,
   },
   {
-    company: 'Innovative Co',
-    year: '2021',
-    title: 'Light Saas Landing Page',
+    company: 'Juddy AI',
+    year: '2024',
+    title: 'Personal AI Chat Bot',
     results: [
       { title: 'Boosted sales by 20%' },
       { title: 'Expanded customer reach by 35%' },
