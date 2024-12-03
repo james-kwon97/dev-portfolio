@@ -34,8 +34,8 @@ const portfolioProjects = [
   },
   {
     company: 'Quantum Dynamics',
-    year: '2023',
-    title: 'AI Startup Landing Page',
+    year: '2024',
+    title: 'Startup Landing Page',
     results: [
       { title: 'Enhanced user experience by 40%' },
       { title: 'Improved site speed by 50%' },
@@ -52,10 +52,10 @@ export const ProjectsSection = () => {
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
-            Real-world Results
+            My Projects
           </p>
         </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
+        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Most Recent Projects</h2>
         <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           See how I transformed designs into engaging user web experiences
         </p>
