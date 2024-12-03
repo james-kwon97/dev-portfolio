@@ -9,21 +9,21 @@ import { Card } from '@/components/Card';
 
 const portfolioProjects = [
   {
-    company: 'Acme Corp',
+    company: 'Drip',
     year: '2024',
-    title: 'Dark Saas Landing Page',
+    title: 'Premium Coffee Website',
     results: [
-      { title: 'Enhanced user experience by 40%' },
-      { title: 'Improved site speed by 50%' },
-      { title: 'Increased mobile traffic by 35%' },
+      { title: 'Māori-English language toggle switch' },
+      { title: 'Responsive on all devices up to 13" screens' },
+      { title: 'Built with React and TypeScript, styled with CSS' },
     ],
     link: 'https://dripnz.netlify.app/',
     image: darkSaasLandingPage,
   },
   {
-    company: 'Innovative Co',
-    year: '2021',
-    title: 'Light Saas Landing Page',
+    company: 'Juddy AI',
+    year: '2024',
+    title: 'Personal AI Chat Bot',
     results: [
       { title: 'Boosted sales by 20%' },
       { title: 'Expanded customer reach by 35%' },
@@ -34,8 +34,8 @@ const portfolioProjects = [
   },
   {
     company: 'Quantum Dynamics',
-    year: '2023',
-    title: 'AI Startup Landing Page',
+    year: '2024',
+    title: 'Startup Landing Page',
     results: [
       { title: 'Enhanced user experience by 40%' },
       { title: 'Improved site speed by 50%' },
@@ -48,14 +48,14 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className="pb-16 lg:py-24">
+    <section className="pb-16 py-20 lg:py-28">
       <div className="container">
         <div className="flex justify-center">
           <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 text-transparent bg-clip-text">
-            Real-world Results
+            My Projects
           </p>
         </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Featured Projects</h2>
+        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">Most Recent Projects</h2>
         <p className="text-center md:text-lg lg:text-xl text-white/60 mt-4 max-w-md mx-auto">
           See how I transformed designs into engaging user web experiences
         </p>
