@@ -15,6 +15,7 @@ import smileMemoji from '@/assets/images/memoji-smile.png';
 import { CardHeader } from '@/components/CardHeader';
 import { TechStackItems } from '@/components/TechStackItems';
 import { motion } from 'framer-motion';
+import { useRef } from 'react';
 
 const techStackItems = [
   {
@@ -89,6 +90,8 @@ const hobbies = [
 ];
 
 export const AboutSection = () => {
+  const constraintRef = useRef(null);
+
   return (
     <div className="py-20 lg:py-28">
       <div className="container">
@@ -133,7 +136,7 @@ export const AboutSection = () => {
                 description="Explore my interests and hobbies beyond the digital realm."
                 className="px-6 py-6"
               />
-              <div className="relative flex-1">
+              <div className="relative flex-1" ref={constraintRef}>
                 {hobbies.map((hobby) => (
                   <motion.div
                     key={hobby.title}
@@ -143,6 +146,7 @@ export const AboutSection = () => {
                       top: hobby.top,
                     }}
                     drag
+                    dragConstraints={constraintRef}
                   >
                     <span className="font-medium text-gray-950">{hobby.title}</span>
                     <span>{hobby.emoji}</span>
