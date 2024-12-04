@@ -142,6 +142,7 @@ export const AboutSection = () => {
                       left: hobby.left,
                       top: hobby.top,
                     }}
+                    drag
                   >
                     <span className="font-medium text-gray-950">{hobby.title}</span>
                     <span>{hobby.emoji}</span>
